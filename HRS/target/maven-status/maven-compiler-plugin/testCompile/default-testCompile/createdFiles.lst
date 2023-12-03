@@ -1,0 +1,3 @@
+com\cucumber\framework\stepDef\InactivationApiStepDefinition.class
+com\cucumber\framework\runner\CommonRunner.class
+com\cucumber\framework\stepDef\ClinicalAPI.class

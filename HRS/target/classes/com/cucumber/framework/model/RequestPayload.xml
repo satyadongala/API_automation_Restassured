@@ -1,0 +1,37 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v2="http://wellpoint.com/esb/header/v2" xmlns:get="http://wellpoint.com/schema/getInactivationDataRequest">
+   <soapenv:Header>
+      <v2:ESBHeader>
+         <v2:srvcName>?</v2:srvcName>
+         <v2:srvcVersion>?</v2:srvcVersion>
+         <v2:operName>?</v2:operName>
+         <v2:senderApp>?</v2:senderApp>
+         <v2:transId>?</v2:transId>
+         <!--Zero or more repetitions:-->
+         <v2:ESBProps>
+            <v2:Property>
+               <v2:name>?</v2:name>
+               <v2:value>?</v2:value>
+            </v2:Property>
+         </v2:ESBProps>
+      </v2:ESBHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <get:getInactivationDataRequest>
+         <!--Optional:-->
+         <get:MemberInfo>
+            <!--Optional:-->
+            <get:MemberDetails>
+               <!--Optional:-->
+               <get:MasterConsumerID>?</get:MasterConsumerID>
+               <!--Optional:-->
+               <get:SubscriberID>N00550268</get:SubscriberID>
+               <!--Optional:-->
+               <get:MemberSequenceNumber>001</get:MemberSequenceNumber>
+               <!--Optional:-->
+               <get:SourceSystem>WGS</get:SourceSystem>
+			<get:SenderApp>CED</get:SenderApp>
+            </get:MemberDetails>
+         </get:MemberInfo>
+      </get:getInactivationDataRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
